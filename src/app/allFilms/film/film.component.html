@@ -1,0 +1,8 @@
+<div>
+<h3 [ngClass]="{'badge badge-success':t.nouveau,
+'badge badge-warning':!t.nouveau
+}">film n°{{i}}{{t.titre|uppercase}} </h3>
+<img src="{{t.affiche}}"/>
+<input type="checkbox" [checked]="t.duree>90"/><span>long film</span>
+<input type="button" (click)="nombreFilms()" value="Nb films">
+</div>
